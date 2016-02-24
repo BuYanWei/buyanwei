@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <EditText
+        android:id="@+id/phone"
+        android:hint="输入手机号"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/fasong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText1"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:text="发送" />
+
+    <EditText
+        android:id="@+id/huoqu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="获取验证码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/huoqu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/huoqu"
+        android:layout_alignBottom="@+id/huoqu"
+        android:layout_alignParentRight="true"
+        android:text="获取" />
+
+</RelativeLayout>
